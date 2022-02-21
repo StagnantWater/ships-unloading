@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+    <title>Главное меню</title>
+</head>
+
+<body>
+    <h1>Добро пожаловать в информационную систему!</h1>
+    {% if group != 'unauthorized' %}
+        <div id="group_name">Вход выполнен: {{group}}</div>
+    {% endif %}
+    <ul>
+        <li><a class="menu" href="/query">Работа с запросами</a></li>
+        <li><a class="menu" href="/edit">Редактировать табель участия</a></li>
+        <li><a class="menu" href="/auth">Авторизация</a></li>
+        <li><a class="menu" href="/auth/exit">Выход</a></li>
+    </ul>
+</body>
+
+</html>

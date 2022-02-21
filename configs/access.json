@@ -1,0 +1,6 @@
+{
+  "admin": ["query_app.choose_query", "query_app.query1", "query_app.query2", "edit.edit_part", "edit.insert"],
+  "group1": ["query_app.choose_query", "query_app.query1", "query_app.query2"],
+  "group2": ["edit.edit_part", "edit.insert"],
+  "unauthorized": ["auth.login_page"]
+}
